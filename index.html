@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="color-switcher">
+        <span class="btn" id="green" onclick="changeBG('#ADFF2F')"> </span>
+        <span class="btn" id="gold" onclick="changeBG('#FFD700')"></span>
+        <span class="btn" id="white" onclick="changeBG('#ffffff')"></span>
+        <span class="btn" id="black" onclick="changeBG('#000000')"></span>
+        <h1 class="text">Mountains</h1>
+
+        <img src="https://cdn.pixabay.com/photo/2017/02/01/22/02/mountain-landscape-2031539_960_720.jpg">
+        <p class="text">
+            The world's tallest mountain ranges form when pieces of Earth's crust—called plates—smash against each other
+            in a process called plate tectonics, and buckle up like the hood of a car in a head-on collision. The
+            Himalaya in Asia formed from one such massive wreck that started about 55 million years ago. Thirty of the
+            world’s highest mountains are in the Himalaya. The summit of Mount Everest, at 29,035 feet (8,850 meters),
+            is the highest point on Earth.
+
+            The tallest mountain measured from top to bottom is Mauna Kea, an inactive volcano on the island of Hawaii
+            in the Pacific Ocean. Measured from the base, Mauna Kea stands 33,474 feet (10,203 meters) tall, though it
+            only rises 13,796 feet (4,205 meters) above the sea.
+
+            Volcanic mountains form when molten rock from deep inside the Earth erupts through the crust and piles up on
+            itself. The islands of Hawaii were formed by undersea volcanoes, and the islands seen above water today are
+            the remaining volcano tops. Well-known volcanoes on land include Mount St. Helens in Washington State and
+            Mount Fuji in Japan. Sometimes volcanic eruptions break down mountains instead of building them up, like the
+            1980 eruption that blew the top off Mount St. Helens.
+
+            When magma pushes the crust up but hardens before erupting onto the surface, it forms so-called dome
+            mountains. Wind and rain pummel the domes, sculpting peaks and valleys. Examples include the Black Hills of
+            South Dakota and the Adirondack Mountains of New York. Plateau mountains are similar to dome mountains, but
+            form as colliding tectonic plates push up the land without folding or faulting. They are then shaped by
+            weathering and erosion.
+
+            Other types of mountains form when stresses within and between the tectonic plates lead to cracking and
+            faulting of the Earth's surface, which forces blocks of rock up and down. Examples of fault-block mountains
+            include the Sierra Nevada in California and Nevada, the Tetons in Wyoming, and the Harz Mountains in
+            Germany.
+        </p>
+    </div>
+
+    
+    <script>
+        function changeBG(color) {
+            document.body.style.backgroundColor = color;
+            let text = document.getElementsByClassName('text');
+            if (color == '#000000') {
+                for (let elm of text)
+                    elm.style.color = 'white';
+
+
+            }
+            else {
+                for (let elm of text)
+                    elm.style.color = 'black';
+
+            }
+        }
+
+    </script>
+</body>
+
+</html>
